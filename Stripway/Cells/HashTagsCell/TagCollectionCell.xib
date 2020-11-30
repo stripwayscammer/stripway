@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="TagCollectionCell" id="gTV-IL-0wX" customClass="TagCollectionCell" customModule="Stripway" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="28"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="255" height="28"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF7-dK-gKz">
+                        <rect key="frame" x="16" y="4" width="223" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="BQ9-ue-v4T"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="304" id="EUg-pS-AJa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XF7-dK-gKz" secondAttribute="trailing" constant="16" id="K7T-UA-tfr"/>
+                <constraint firstItem="XF7-dK-gKz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="Uz0-13-GDH"/>
+                <constraint firstItem="XF7-dK-gKz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="sUI-WT-2cs"/>
+                <constraint firstAttribute="bottom" secondItem="XF7-dK-gKz" secondAttribute="bottom" constant="4" id="zTN-zK-pw6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="255" height="50"/>
+            <connections>
+                <outlet property="lbTitle" destination="XF7-dK-gKz" id="7Ms-2F-S65"/>
+                <outlet property="tagNameMaxWidthConstraint" destination="EUg-pS-AJa" id="Qta-gc-g09"/>
+            </connections>
+            <point key="canvasLocation" x="126.81159420289856" y="135.9375"/>
+        </collectionViewCell>
+    </objects>
+</document>
